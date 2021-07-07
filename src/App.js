@@ -1,13 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
+import { Component } from 'react';
 
-function App() {
+class App extends Component{
+  constructor(props){
+    super(props)
+
+    this.state={
+      nome: 'renan'
+    }
+    
+  
+}
+
+handleMudarNome=()=>{
+  const newNome = 'Novo nome'
+  this.setState({nome: `${newNome}`})
+}
+
+render(){
+  const {nome}= this.state
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <p onClick={this.handleMudarNome}>
+          {nome}
         </p>
         <a
           className="App-link"
@@ -21,5 +39,8 @@ function App() {
     </div>
   );
 }
+
+}
+
 
 export default App;
