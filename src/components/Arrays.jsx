@@ -26,11 +26,21 @@ class Arrays extends Component{
         ]
     }
     }
+
+    componentDidMount(){
+        //simulando uma requisição de uma API
+        const {posts} = this.state
+        posts[0].title = 'Novo title'
+        setTimeout(()=>{
+            this.setState({posts})
+        },2000)
+    }
+
     render(){
         const {posts} = this.state
         return <div className='App'>
           {posts.map(post=>(
-              
+
             <div key={post.id}>
           <h1 >{post.title}</h1>
           <p>{post.body}</p>
