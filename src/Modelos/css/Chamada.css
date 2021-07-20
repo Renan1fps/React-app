@@ -1,0 +1,27 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    min-width: 100vh;
+    background: rgb(192, 192, 192);
+    padding: 30px;
+}
+
+.posts{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+    gap: 30px;
+}
+
+.post{
+    background: rgb(167, 133, 184);
+    box-shadow: 5px 5px 5px rgb(83, 83, 83);
+ 
+}
+
+.post img{
+    max-width: 100%;
+}
+
+.post-content{
+    padding: 30px;
+}
