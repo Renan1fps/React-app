@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(110, 110, 110);
+}
+.users{
+    
+    background-color: rgb(100, 100, 100);
+    text-align: center;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-shadow: 5px 5px 5px rgb(44, 43, 43);
+    border-radius: 20px;
+    font-size: 10px;
+    padding-top: 10px;
+    max-width: 20px 500px;
+    margin: 90px;
+}
+
+.users:hover{
+    background-color: rgb(104, 104, 104);
+}
