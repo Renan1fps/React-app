@@ -1,6 +1,7 @@
 import react from 'react'
 import { Component } from "react";
 import './css/Chamada.css'
+import Posts from '../components/Post';
 
 
 class ChamadaApi extends Component {
@@ -38,15 +39,7 @@ render(){
     return(
          <section className= "container">
            <div className= "posts">
-            {posts.map(post=> (
-                <div className= "post">
-                    <img src={post.cover} alt= {post.title}/>
-                    <div key={post.id} className= "post-content">
-                      <h1>{post.title}</h1>
-                      <p>{post.body}</p>
-                   </div>
-                </div>
-                ))}
+           <Posts post={posts} />
           </div>
          </section>
         
